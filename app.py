@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 
-openai.api_key = st.secrets["API_KEY"]
+openai.api_key = "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"
 
 
 @st.cache(allow_output_mutation=True)
