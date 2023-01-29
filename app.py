@@ -1,8 +1,8 @@
 import streamlit as st
 import openai
-from decouple import config
 
-openai.api_key = config("API_KEY")
+
+openai.api_key = st.secrets["API_KEY"]
 
 
 @st.cache(allow_output_mutation=True)
