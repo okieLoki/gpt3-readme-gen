@@ -41,7 +41,7 @@ with instructions.container():
 
 st.subheader("Upload the code files 📩")
 uploaded_files = st.file_uploader(
-    '',  accept_multiple_files=True, key="file_upload")
+    'None',  accept_multiple_files=True, key="file_upload", label_visibility="hidden")
 
 if uploaded_files is not None:
     for i in range(0, len(uploaded_files)):
